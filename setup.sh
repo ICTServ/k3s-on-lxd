@@ -10,7 +10,7 @@ if [ ${EXIT_CODE} == 1 ]
 fi
 
 LXC_PROFILE="k3s"
-LXC_CONTAINER_MEMORY="2GB"
+LXC_CONTAINER_MEMORY="8GB"
 LXC_CONTAINER_CPU="2"
 
 if [ -f ~/.k3s_lxd ]
