@@ -11,20 +11,20 @@ K3S on LXD
 Get the sources:
 
 ```
-$ https://github.com/ICTServ/k3s-on-lxd && cd k3s-on-lxd
-$ chmod +x *.sh
+git clone https://github.com/ICTServ/k3s-on-lxd && cd k3s-on-lxd && chmod +x *.sh
+
 ```
 
 Create the lxc profile:
 
 ```
-$ ./setup.sh
+ ./setup.sh
 ```
 
 Deploy a master:
 
 ```
-$ ./deploy_master.sh k3s-master
+ ./deploy_master.sh k3s-master
 ...
 [INFO]  systemd: Starting k3s
 writing config to /home/user/kubeconfig
@@ -33,8 +33,8 @@ writing config to /home/user/kubeconfig
 Deploy 2 agents:
 
 ```
-$ ./deploy_agent.sh k3s-node-1
-$ ./deploy_agent.sh k3s-node-2
+ ./deploy_agent.sh k3s-node-1
+ ./deploy_agent.sh k3s-node-2
 ```
 
 View the nodes using kubectl:
